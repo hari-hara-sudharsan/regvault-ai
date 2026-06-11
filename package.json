@@ -1,0 +1,261 @@
+{
+    "name": "mantleguard-solidity",
+    "displayName": "MantleGuard Solidity",
+    "description": "Security analysis and gas optimization tool for Solidity smart contracts",
+    "version": "0.1.0",
+    "publisher": "mantleguard",
+    "author": {
+        "name": "Vendhan",
+        "email": "etvendhan12@gmail.com"
+    },
+    "license": "MIT",
+    "keywords": [
+        "solidity",
+        "smart-contracts",
+        "security",
+        "audit",
+        "gas-optimization",
+        "ethereum",
+        "blockchain"
+    ],
+    "galleryBanner": {
+        "color": "#1e1e1e",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hari-hara-sudharsan/regvault-ai"
+    },
+    "bugs": {
+        "url": "https://github.com/hari-hara-sudharsan/regvault-ai/issues"
+    },
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:solidity"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "mantleguard.analyzeContract",
+                "title": "MantleGuard: Analyze Contract",
+                "icon": "$(file-code)"
+            },
+            {
+                "command": "mantleguard.auditContract",
+                "title": "MantleGuard: Audit Contract",
+                "icon": "$(shield)"
+            },
+            {
+                "command": "mantleguard.optimizeGas",
+                "title": "MantleGuard: Optimize Gas",
+                "icon": "$(dashboard)"
+            },
+            {
+                "command": "mantleguard.aiCopilot",
+                "title": "MantleGuard: AI Copilot",
+                "icon": "$(robot)"
+            },
+            {
+                "command": "mantleguard.generateReport",
+                "title": "MantleGuard: Generate Report",
+                "icon": "$(file-pdf)"
+            },
+            {
+                "command": "mantleguard.openDashboard",
+                "title": "MantleGuard: Open Dashboard",
+                "icon": "$(home)"
+            },
+            {
+                "command": "mantleguard.showGas",
+                "title": "MantleGuard: Show Gas View",
+                "icon": "$(dashboard)"
+            },
+            {
+                "command": "mantleguard.showAudit",
+                "title": "MantleGuard: Show Audit View",
+                "icon": "$(shield)"
+            },
+            {
+                "command": "mantleguard.showCopilot",
+                "title": "MantleGuard: Show Copilot View",
+                "icon": "$(robot)"
+            },
+            {
+                "command": "mantleguard.showReports",
+                "title": "MantleGuard: Show Reports View",
+                "icon": "$(file-pdf)"
+            },
+            {
+                "command": "mantleguard.showSettings",
+                "title": "MantleGuard: Show Settings",
+                "icon": "$(settings-gear)"
+            }
+        ],
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "mantleguard",
+                    "title": "MantleGuard",
+                    "icon": "media/icon.svg"
+                }
+            ]
+        },
+        "views": {
+            "mantleguard": [
+                {
+                    "id": "mantleguard.aiChat",
+                    "name": "Ask MantleGuard",
+                    "type": "webview",
+                    "icon": "$(comment-discussion)",
+                    "contextualTitle": "AI Chat"
+                },
+                {
+                    "id": "mantleguard.dashboard",
+                    "name": "Dashboard",
+                    "icon": "$(home)",
+                    "contextualTitle": "MantleGuard Dashboard"
+                },
+                {
+                    "id": "mantleguard.gas",
+                    "name": "Gas",
+                    "icon": "$(dashboard)",
+                    "contextualTitle": "Gas Analysis"
+                },
+                {
+                    "id": "mantleguard.audit",
+                    "name": "Audit",
+                    "icon": "$(shield)",
+                    "contextualTitle": "Security Audit"
+                },
+                {
+                    "id": "mantleguard.copilot",
+                    "name": "Copilot",
+                    "icon": "$(robot)",
+                    "contextualTitle": "AI Copilot"
+                },
+                {
+                    "id": "mantleguard.reports",
+                    "name": "Reports",
+                    "icon": "$(file-pdf)",
+                    "contextualTitle": "Reports"
+                },
+                {
+                    "id": "mantleguard.settings",
+                    "name": "Settings",
+                    "icon": "$(settings-gear)",
+                    "contextualTitle": "Settings"
+                }
+            ]
+        },
+        "menus": {
+            "view/title": [
+                {
+                    "command": "mantleguard.openDashboard",
+                    "when": "view == mantleguard.dashboard",
+                    "group": "navigation"
+                }
+            ],
+            "commandPalette": [
+                {
+                    "command": "mantleguard.analyzeContract",
+                    "when": "editorLangId == solidity"
+                },
+                {
+                    "command": "mantleguard.auditContract",
+                    "when": "editorLangId == solidity"
+                },
+                {
+                    "command": "mantleguard.optimizeGas",
+                    "when": "editorLangId == solidity"
+                }
+            ],
+            "editor/context": [
+                {
+                    "command": "mantleguard.analyzeContract",
+                    "when": "resourceExtname == .sol",
+                    "group": "mantleguard@1"
+                },
+                {
+                    "command": "mantleguard.auditContract",
+                    "when": "resourceExtname == .sol",
+                    "group": "mantleguard@2"
+                },
+                {
+                    "command": "mantleguard.optimizeGas",
+                    "when": "resourceExtname == .sol",
+                    "group": "mantleguard@3"
+                },
+                {
+                    "command": "mantleguard.aiCopilot",
+                    "when": "resourceExtname == .sol",
+                    "group": "mantleguard@4"
+                },
+                {
+                    "command": "mantleguard.generateReport",
+                    "when": "resourceExtname == .sol",
+                    "group": "mantleguard@5"
+                }
+            ],
+            "explorer/context": [
+                {
+                    "command": "mantleguard.analyzeContract",
+                    "when": "resourceExtname == .sol",
+                    "group": "mantleguard@1"
+                },
+                {
+                    "command": "mantleguard.auditContract",
+                    "when": "resourceExtname == .sol",
+                    "group": "mantleguard@2"
+                },
+                {
+                    "command": "mantleguard.optimizeGas",
+                    "when": "resourceExtname == .sol",
+                    "group": "mantleguard@3"
+                },
+                {
+                    "command": "mantleguard.generateReport",
+                    "when": "resourceExtname == .sol",
+                    "group": "mantleguard@4"
+                }
+            ]
+        },
+        "configuration": {
+            "title": "MantleGuard",
+            "properties": {
+                "mantleguard.enableAutoAnalysis": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Enable automatic analysis on file save"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "lint": "eslint src --ext ts"
+    },
+    "devDependencies": {
+        "@types/node": "^20.19.42",
+        "@types/vscode": "^1.85.0",
+        "@typescript-eslint/eslint-plugin": "^6.x",
+        "@typescript-eslint/parser": "^6.x",
+        "esbuild": "^0.28.0",
+        "eslint": "^8.57.1",
+        "prettier": "^3.8.4",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "axios": "^1.6.0",
+        "uuid": "^9.0.0",
+        "vscode-languageclient": "^9.0.1",
+        "zod": "^3.24.2"
+    }
+}

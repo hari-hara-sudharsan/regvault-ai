@@ -1,0 +1,22 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Shield shape -->
+  <path d="M 64 10 L 20 30 L 20 60 Q 20 95 64 118 Q 108 95 108 60 L 108 30 Z" 
+        fill="url(#shieldGradient)" 
+        stroke="#2C5F8D" 
+        stroke-width="2"/>
+  
+  <!-- Checkmark or security symbol -->
+  <path d="M 45 64 L 58 77 L 83 52" 
+        fill="none" 
+        stroke="#FFFFFF" 
+        stroke-width="6" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+</svg>

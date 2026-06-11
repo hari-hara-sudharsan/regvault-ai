@@ -1,0 +1,100 @@
+.vscode/**
+.vscode-test/**
+src/**
+.gitignore
+.yarnrc
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/.eslintrc.json
+**/*.map
+**/*.ts
+.editorconfig
+.prettierrc
+
+# Git and GitHub
+.git/**
+.github/**
+.gitignore
+.gitattributes
+
+# Environment and config files
+.env
+.env.*
+.env.local
+.env.production
+.env.development
+
+# Coverage and tests
+coverage/**
+tests/**
+test/**
+*.test.ts
+*.spec.ts
+
+# VSCode folders
+.vscode/**
+.vscode-test/**
+
+# Node modules and cache
+node_modules/**
+.cache/**
+*.cache
+
+# Sensitive files (SECURITY)
+apikey.txt
+secret.json
+secrets.json
+wallet.json
+private.pem
+*.pem
+*.key
+config.json
+credentials.json
+
+# Build files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Exclude all markdown documentation except README
+*.md
+!README.md
+!CHANGELOG.md
+!LICENSE.md
+
+# Exclude test files
+TEST_*.md
+TEST_*.sol
+*_TEST.*
+
+# Exclude guide files
+*_GUIDE.md
+*_COMPLETE.md
+*_STATUS.md
+*_SUMMARY.*
+*_CHECKLIST.md
+ARCHITECTURE.md
+QUICKSTART.md
+PROJECT_*.md
+STEPS_*.md
+FEATURES_*.md
+IMPLEMENTATION_*.md
+ADVANCED_*.md
+FINAL_*.md
+ALL_*.md
+COMPLETE.*
+PACKAGING_*.*
+CREATE_*.md
+PUBLISH_*.md
+INSTALL.md
+START_*.md
+QUICK_*.md
+LOCAL_*.md
+FIX_*.md
+SECURITY_*.md
+
+# Keep only essentials
+!LICENSE
+!README.md
+!CHANGELOG.md

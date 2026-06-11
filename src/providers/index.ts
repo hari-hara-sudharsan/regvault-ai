@@ -1,0 +1,11 @@
+export { DashboardViewProvider } from './dashboardViewProvider';
+export { GasViewProvider } from './gasViewProvider';
+export { AuditViewProvider } from './auditViewProvider';
+export { CopilotViewProvider } from './copilotViewProvider';
+export { ReportsViewProvider } from './reportsViewProvider';
+export { SettingsViewProvider } from './settingsViewProvider';
+export { MantleGuardCodeLensProvider } from './mantleGuardCodeLensProvider';
+export { MantleGuardDiagnosticsProvider, SecurityIssue } from './mantleGuardDiagnosticsProvider';
+export { MantleGuardHoverProvider } from './mantleGuardHoverProvider';
+export { AIChatViewProvider } from './aiChatViewProvider';
+export { QuickFixProvider, applyAIFix, addReentrancyGuard, addCallCheck } from './quickFixProvider';
